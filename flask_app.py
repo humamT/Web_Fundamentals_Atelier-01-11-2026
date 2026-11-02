@@ -51,6 +51,16 @@ def presentation():
     return render_template("presentation.html", prenom="Humam", nom="Altoukhi",
                        loisirs=["Jeux vidéo", "Musique", "Cinéma"])
 
+@app.get("/moi")
+def moi():
+    return render_template(
+        "moi.html",
+        ip=request.headers.get("X-Real-IP", request.remote_addr),
+        navigateur=request.headers.get("User-Agent"),
+        langues=request.headers.get("Accept-Language"),
+        entetes=request.headers,
+    )
+
 @app.get("/bonjour/<prenom>")
 def bonjour(prenom):
     return render_template("bonjour.html", prenom=prenom)
