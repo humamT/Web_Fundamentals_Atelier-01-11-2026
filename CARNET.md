@@ -43,19 +43,19 @@
 
 1. Quelle est la différence entre ce que le serveur **envoie** et ce que le navigateur **affiche** ?
 
-   > Le serveur envoie uniquement du texte brut contenant des balises HTML (par exemple <h1>Léa Martin</h1>). Le navigateur interprète ces balises et les transforme en une page mise en forme, avec des titres, des paragraphes, des listes et des images. Le texte reçu et la page affichée ne sont donc pas la même chose.
+   > Le serveur envoie uniquement du texte brut contenant des balises HTML (par exemple `<h1>Léa Martin</h1>`). Le navigateur interprète ces balises et les transforme en une page mise en forme, avec des titres, des paragraphes, des listes et des images. Le texte reçu et la page affichée ne sont donc pas la même chose.
 
 2. À quoi servent les balises `<h1>`, `<p>`, `<ul>` et `<li>` ?
 
    > Ces balises servent à structurer la page :
-   > <h1> : un titre principal (<h2> est un sous-titre).
-   > <p> : un paragraphe de texte.
-   > <ul> : une liste à puces (unordered list).
-   > <li> : un élément de cette liste (list item).
+   > `<h1>` : un titre principal (`<h2>` est un sous-titre).
+   > `<p>` : un paragraphe de texte.
+   > `<ul>` : une liste à puces (unordered list).
+   > `<li>` : un élément de cette liste (list item).
 
 3. Pourquoi l'image s'affiche-t-elle alors qu'elle n'est pas sur votre serveur ?
 
-   > L’image s’affiche parce que la balise <img src="..."> contient l’adresse (URL) de l’image. Le navigateur lit cette adresse, envoie une seconde requête au serveur qui l’héberge (ici Wikimedia) et affiche l’image dans la page. Elle n’a pas besoin d’être sur mon serveur.
+   > L’image s’affiche parce que la balise `<img src="...">` contient l’adresse (URL) de l’image. Le navigateur lit cette adresse, envoie une seconde requête au serveur qui l’héberge (ici Wikimedia) et affiche l’image dans la page. Elle n’a pas besoin d’être sur mon serveur.
 
 ---
 
