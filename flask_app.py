@@ -30,6 +30,10 @@ def presentation():
     return render_template("presentation.html", prenom="Humam", nom="Altoukhi",
                        loisirs=["Jeux vidéo", "Musique", "Cinéma"])
 
+@app.get("/bonjour/<prenom>")
+def bonjour(prenom):
+    return f"<h1>Bonjour {prenom} !</h1>"
+
 @app.get("/loisirs")
 def loisirs():
     return "Mes loisirs : le football, la lecture, le cinéma."
