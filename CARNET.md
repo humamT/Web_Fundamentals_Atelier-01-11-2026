@@ -159,19 +159,19 @@
 
 1. Citez trois informations que le serveur connaît sur vous, sans que vous ayez rien rempli.
 
-   > _Ma réponse :_ 
+   > Sans rien remplir, le serveur connaît par exemple : mon adresse IP, mon navigateur et mon système d’exploitation (en-tête User-Agent), et mes langues préférées (en-tête Accept-Language).
 
 2. À quoi peut servir l'en-tête `Accept-Language` pour un site comme Wikipédia ?
 
-   > _Ma réponse :_ 
+   > L’en-tête Accept-Language indique la langue que je préfère. Un site comme Wikipédia peut s’en servir pour afficher automatiquement la page dans ma langue (en français plutôt qu’en anglais, par exemple), sans que j’aie à la choisir.
 
 3. Dans l'Access log, retrouvez une requête qui a reçu un code `404`. Quelle page était demandée ?
 
-   > _Ma réponse :_ 
+   > Dans l’Access log, j’ai retrouvé une requête avec le code 404 pour la page /favicon.ico (ou /nimportequoi, selon mes tests).
 
 4. Après cet exercice, que pensez-vous de la notion de « navigation anonyme » ?
 
-   > _Ma réponse :_ 
+   > La « navigation anonyme » est moins anonyme qu’on ne le croit. Elle empêche surtout le navigateur de garder l’historique et les cookies sur mon ordinateur, mais le serveur reçoit toujours mon adresse IP, mon navigateur et mes langues. Je ne suis donc pas invisible : je suis seulement moins tracé sur mon propre appareil.
 
 ---
 
