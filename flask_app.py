@@ -57,6 +57,10 @@ def api_heure():
         "message": "Bonjour depuis mon API !",
     })
 
+@app.get("/horloge")
+def horloge():
+    return render_template("horloge.html")
+
 @app.get("/presentation")
 def presentation():
     return render_template("presentation.html", prenom="Humam", nom="Altoukhi",
