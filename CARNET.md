@@ -15,11 +15,11 @@
 
 1. Où se trouve physiquement le code qui fabrique votre page : sur votre ordinateur, sur GitHub ou sur PythonAnywhere ?
 
-   > _Ma réponse :_ Le code qui fabrique la page se trouve sur PythonAnywhere. GitHub ne fait que stocker le code et son historique, et GitHub Actions le livre au serveur. C’est sur PythonAnywhere que le programme Flask s’exécute et génère la page. Rien ne se trouve sur mon ordinateur.
+   >  Le code qui fabrique la page se trouve sur PythonAnywhere. GitHub ne fait que stocker le code et son historique, et GitHub Actions le livre au serveur. C’est sur PythonAnywhere que le programme Flask s’exécute et génère la page. Rien ne se trouve sur mon ordinateur.
 
 2. Pourquoi votre voisin(e) peut-il voir votre site, alors que vous n'avez rien installé sur son ordinateur ?
 
-   > _Ma réponse :_ Mon voisin peut voir le site parce que le programme tourne sur un serveur allumé en permanence et accessible depuis Internet, pas sur son ordinateur. Son navigateur envoie simplement une requête à l’adresse du site et reçoit la page en réponse. Il n’a donc rien à installer.
+   >  Mon voisin peut voir le site parce que le programme tourne sur un serveur allumé en permanence et accessible depuis Internet, pas sur son ordinateur. Son navigateur envoie simplement une requête à l’adresse du site et reçoit la page en réponse. Il n’a donc rien à installer.
 
 ---
 
@@ -27,15 +27,15 @@
 
 1. Dans l'URL `https://www.google.com/maps`, quel est le nom de domaine ? Quel est le chemin ?
 
-   > _Ma réponse :_ Dans https://www.google.com/maps, le nom de domaine est www.google.com (le serveur) et le chemin est /maps (la page demandée).
+   >  Dans https://www.google.com/maps, le nom de domaine est www.google.com (le serveur) et le chemin est /maps (la page demandée).
 
 2. Que veut dire le message *Not Found* ? Qui l'a envoyé : votre navigateur ou le serveur ?
 
-   > _Ma réponse :_ Not Found veut dire que le serveur n’a aucune route associée à ce chemin. Ce message a été envoyé par le serveur, pas par le navigateur : le serveur a bien reçu la requête, mais il ne connaît pas cette page (c’est l’erreur 404).
+   >  Not Found veut dire que le serveur n’a aucune route associée à ce chemin. Ce message a été envoyé par le serveur, pas par le navigateur : le serveur a bien reçu la requête, mais il ne connaît pas cette page (c’est l’erreur 404).
 
 3. Que se passe-t-il si deux fonctions portent le même nom dans `flask_app.py` ? (Indice : essayez, puis lisez l'Error log.)
 
-   > _Ma réponse :_ Si deux fonctions portent le même nom, Flask lève une erreur au démarrage : AssertionError: View function mapping is overwriting an existing endpoint function. Le site affiche alors une erreur (« Something went wrong ») et plus rien ne fonctionne. On le voit à la fin de l’Error log.
+   >  Si deux fonctions portent le même nom, Flask lève une erreur au démarrage : AssertionError: View function mapping is overwriting an existing endpoint function. Le site affiche alors une erreur (« Something went wrong ») et plus rien ne fonctionne. On le voit à la fin de l’Error log.
 
 ---
 
@@ -43,15 +43,19 @@
 
 1. Quelle est la différence entre ce que le serveur **envoie** et ce que le navigateur **affiche** ?
 
-   > _Ma réponse :_ 
+   > Le serveur envoie uniquement du texte brut contenant des balises HTML (par exemple <h1>Léa Martin</h1>). Le navigateur interprète ces balises et les transforme en une page mise en forme, avec des titres, des paragraphes, des listes et des images. Le texte reçu et la page affichée ne sont donc pas la même chose.
 
 2. À quoi servent les balises `<h1>`, `<p>`, `<ul>` et `<li>` ?
 
-   > _Ma réponse :_ 
+   > Ces balises servent à structurer la page :
+   > <h1> : un titre principal (<h2> est un sous-titre).
+   > <p> : un paragraphe de texte.
+   > <ul> : une liste à puces (unordered list).
+   > <li> : un élément de cette liste (list item).
 
 3. Pourquoi l'image s'affiche-t-elle alors qu'elle n'est pas sur votre serveur ?
 
-   > _Ma réponse :_ 
+   > L’image s’affiche parce que la balise <img src="..."> contient l’adresse (URL) de l’image. Le navigateur lit cette adresse, envoie une seconde requête au serveur qui l’héberge (ici Wikimedia) et affiche l’image dans la page. Elle n’a pas besoin d’être sur mon serveur.
 
 ---
 
