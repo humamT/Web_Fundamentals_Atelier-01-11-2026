@@ -28,6 +28,7 @@ def accueil():
 @app.get("/presentation")
 def presentation():
     return """
+    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" width="100">
     <h1>Humam ALTOUKHI</h1>
     <p>Je suis étudiant en <strong>3eme année d'informatique</strong>.</p>
     <h2>Ce que j'aime</h2>
