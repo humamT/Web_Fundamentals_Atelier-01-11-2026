@@ -27,15 +27,15 @@
 
 1. Dans l'URL `https://www.google.com/maps`, quel est le nom de domaine ? Quel est le chemin ?
 
-   > _Ma réponse :_ 
+   > _Ma réponse :_ Dans https://www.google.com/maps, le nom de domaine est www.google.com (le serveur) et le chemin est /maps (la page demandée).
 
 2. Que veut dire le message *Not Found* ? Qui l'a envoyé : votre navigateur ou le serveur ?
 
-   > _Ma réponse :_ 
+   > _Ma réponse :_ Not Found veut dire que le serveur n’a aucune route associée à ce chemin. Ce message a été envoyé par le serveur, pas par le navigateur : le serveur a bien reçu la requête, mais il ne connaît pas cette page (c’est l’erreur 404).
 
 3. Que se passe-t-il si deux fonctions portent le même nom dans `flask_app.py` ? (Indice : essayez, puis lisez l'Error log.)
 
-   > _Ma réponse :_ 
+   > _Ma réponse :_ Si deux fonctions portent le même nom, Flask lève une erreur au démarrage : AssertionError: View function mapping is overwriting an existing endpoint function. Le site affiche alors une erreur (« Something went wrong ») et plus rien ne fonctionne. On le voit à la fin de l’Error log.
 
 ---
 
