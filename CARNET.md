@@ -179,15 +179,15 @@
 
 1. Quelle est la différence entre une page HTML et une réponse JSON ? À qui chacune est-elle destinée ?
 
-   > _Ma réponse :_ 
+   > Une page HTML contient du texte mis en forme avec des balises, et elle est destinée aux humains : le navigateur l’affiche pour qu’on la lise. Une réponse JSON contient uniquement des données brutes (par exemple `{"heure": "14:32:05"}`), et elle est destinée aux programmes (une application, un script, une page JavaScript) qui les utilisent à leur façon. 
 
 2. Dans la page `/horloge`, quel code s'exécute sur le **serveur** et quel code s'exécute dans le **navigateur** ?
 
-   > _Ma réponse :_ 
+   > Sur le serveur, c’est le code Python de flask_app.py qui s’exécute : la route `/horloge` qui envoie la page, et la route `/api/heure` qui calcule l’heure et renvoie le JSON. Dans le navigateur, c’est le code JavaScript de la balise `<script>` qui s’exécute : il envoie la requête `fetch("/api/heure")`, lit le JSON reçu et met à jour le texte de la page toutes les secondes.
 
 3. Citez une application de votre téléphone qui, selon vous, utilise une API. Quelles données échange-t-elle ?
 
-   > _Ma réponse :_ 
+   > L’application météo de mon téléphone utilise une API : elle demande à un serveur les données d’une ville et reçoit en JSON la température, le ciel, le vent, etc. (Autre exemple : une application de transport qui échange les horaires et les positions des bus.)
 
 ---
 
@@ -195,4 +195,4 @@
 
 En quelques phrases, expliquez à un ami ce qui se passe entre le moment où il tape une adresse dans son navigateur et celui où la page s'affiche :
 
-> _Ma réponse :_ 
+> Quand je tape une adresse dans mon navigateur, il envoie une requête HTTP au serveur dont le nom figure dans l’URL ; le serveur exécute son code (ici Flask), construit une réponse (une page HTML, avec un code de statut comme 200) et la renvoie, puis le navigateur l’affiche en allant chercher au passage les autres fichiers dont la page a besoin (CSS, images, données d’une API).
