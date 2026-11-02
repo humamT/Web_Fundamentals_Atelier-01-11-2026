@@ -15,11 +15,11 @@
 
 1. Où se trouve physiquement le code qui fabrique votre page : sur votre ordinateur, sur GitHub ou sur PythonAnywhere ?
 
-   > _Ma réponse :_ 
+   > _Ma réponse :_ Le code qui fabrique la page se trouve sur PythonAnywhere. GitHub ne fait que stocker le code et son historique, et GitHub Actions le livre au serveur. C’est sur PythonAnywhere que le programme Flask s’exécute et génère la page. Rien ne se trouve sur mon ordinateur.
 
 2. Pourquoi votre voisin(e) peut-il voir votre site, alors que vous n'avez rien installé sur son ordinateur ?
 
-   > _Ma réponse :_ 
+   > _Ma réponse :_ Mon voisin peut voir le site parce que le programme tourne sur un serveur allumé en permanence et accessible depuis Internet, pas sur son ordinateur. Son navigateur envoie simplement une requête à l’adresse du site et reçoit la page en réponse. Il n’a donc rien à installer.
 
 ---
 
