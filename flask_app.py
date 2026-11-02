@@ -42,6 +42,10 @@ def secret():
 def page_introuvable(erreur):
     return render_template("404.html"), 404
 
+@app.errorhandler(403)
+def acces_interdit(erreur):
+    return render_template("403.html"), 403
+
 @app.get("/presentation")
 def presentation():
     return render_template("presentation.html", prenom="Humam", nom="Altoukhi",
