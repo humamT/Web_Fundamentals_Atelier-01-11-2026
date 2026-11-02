@@ -42,6 +42,9 @@ def loisirs():
 def calcul():
     a = int(request.args.get("a", 0))
     b = int(request.args.get("b", 0))
+    op = request.args.get("op", "plus")
+    if op == "fois":
+        return f"{a} × {b} = {a * b}"
     return f"{a} + {b} = {a + b}"
 
 # ---------------------------------------------------------------
