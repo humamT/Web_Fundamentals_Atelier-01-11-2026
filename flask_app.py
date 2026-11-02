@@ -8,7 +8,7 @@
 #  Les consignes sont dans le dossier "exercices/".
 # ---------------------------------------------------------------
 
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
@@ -37,6 +37,12 @@ def bonjour(prenom):
 @app.get("/loisirs")
 def loisirs():
     return "Mes loisirs : le football, la lecture, le cinéma."
+
+@app.get("/calcul")
+def calcul():
+    a = int(request.args.get("a", 0))
+    b = int(request.args.get("b", 0))
+    return f"{a} + {b} = {a + b}"
 
 # ---------------------------------------------------------------
 #  Ne pas modifier : utile seulement pour lancer le site
