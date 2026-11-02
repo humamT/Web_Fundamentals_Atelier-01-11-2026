@@ -25,7 +25,9 @@ def accueil():
 #  Ajoutez vos nouvelles routes ci-dessous 👇
 # ---------------------------------------------------------------
 
-
+@app.get("/presentation")
+def presentation():
+    return "Je m'appelle Humam et je suis étudiant en informatique."
 
 # ---------------------------------------------------------------
 #  Ne pas modifier : utile seulement pour lancer le site
