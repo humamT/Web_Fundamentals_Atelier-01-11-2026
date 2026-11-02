@@ -111,15 +111,15 @@
 
 1. Dans l'URL `https://www.youtube.com/results?search_query=chat`, quel est le nom du paramètre ? Quelle est sa valeur ?
 
-   > _Ma réponse :_ 
+   > Dans https://www.youtube.com/results?search_query=chat, le nom du paramètre est search_query et sa valeur est chat.
 
 2. Pourquoi le serveur plante-t-il avec `a=bonjour` ? Que faudrait-il faire pour l'éviter ?
 
-   > _Ma réponse :_ 
+   > Le serveur plante avec a=bonjour parce que int("bonjour") essaie de convertir du texte en nombre, ce qui est impossible et provoque une erreur (ValueError). Pour l’éviter, il faudrait vérifier la valeur avant de la convertir (avec un try/except, par exemple) et afficher un message d’erreur clair si ce n’est pas un nombre.
 
 3. Pourquoi est-il dangereux d'afficher **tel quel** ce que l'utilisateur envoie ?
 
-   > _Ma réponse :_ 
+   > Il est dangereux d’afficher tel quel ce que l’utilisateur envoie, car il peut y glisser du code HTML ou JavaScript qui sera exécuté dans le navigateur des visiteurs. Un attaquant pourrait ainsi modifier l’apparence de la page, voler des informations ou rediriger vers un site malveillant. C’est ce qu’on appelle une faille d’injection (XSS).
 
 ---
 
